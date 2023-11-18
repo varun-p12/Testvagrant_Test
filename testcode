@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct product{
+int price[5]={1100,900,200,100};
+int gst[5]={18,12,28,0};
+int quantity[5]={1,4,3,2};
+} leather,umbrella,cigarette,honey;
+int main()
+{
+    float total,temp;
+    float maximum=0;
+    
+    leather=(product.price[0]+((product.price[0]*product.gst[0])/100))*quantity[0];
+    umbrella=(product.price[1]+((product.price[1]*product.gst[1])/100))*quantity[1];
+    cigarette=(product.price[2]+((product.price[2]*product.gst[2])/100))*quantity[2];
+    leather=(product.price[3]+((product.price[3]*product.gst[3])/100))*quantity[3];
+    total=leather+umbrella+cigarette+honey;
+    for(int i=0;i<4;i++)
+    {
+        
+        temp=(product.price[i]+((product.price[i]*product.gst[i])/100)-product.price[i];
+        if(((product.price[i]+((product.price[i]*product.gst[i])/100)-product.price[i])>=maximum)
+        {
+            maximum=temp;
+        }
+        
+    }
+    printf("Total amount to be paid by the shopkeeper is %f",total);
+    printf("Maximum amount of gst paid is %f ",maximum);
+
